@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Variáveis declaradas com var são içadas, o que permite que sejam referenciadas em qualquer ponto do escopo atual, seja ele global ou dentro de uma função, mesmo antes de serem oficialmente declaradas, embora só possam ser utilizadas após a sua inicialização. Por outro lado, variáveis com let têm escopo de bloco, o que significa que só existem dentro do bloco ({ ... }) onde foram declaradas, e não são içadas, tornando-as inacessíveis até que a declaração seja alcançada no fluxo do código.
+
+        // Variáveis declaradas com let não são inicializadas com nenhum valor, portanto, tentar acessar uma variável declarada com let antes de sua declaração resultará em um erro de referência.
+
+        //Variáveis declaradas com var sofrem hoisting, ou seja, são "içadas" para o topo do seu escopo. Assim, elas serão inicializadas com o valor undefined antes de sua declaração.
+
+        //Variáveis declaradas com var podem ser alteradas, enquanto constantes declaradas com const, não.
+
+        function funcaoExemplo() {
+            if (true) {
+                var variavelVar = "Sou uma variável var";
+                let variavelLet = "Sou uma variável let";
+                console.log(variavelLet);
+                
+            }
+
+            console.log(variavelVar);
+            
+        }
+
+funcaoExemplo();
+
+    </script>
+</body>
+</html>

@@ -7,40 +7,47 @@
 </head>
 <body>
     <script>
+
+        //Vetores (ou arrays) são estruturas de dados que armazenam uma coleção de elementos, que podem ser acessados pelo índice. Em muitas linguagens de programação modernas, os vetores são representados usando colchetes [], com seus elementos separados por vírgulas.
+
+        //Vetores (ou arrays) são estruturas de dados que armazenam uma coleção de elementos, que podem ser acessados pelo índice. Em muitas linguagens de programação modernas, os vetores são representados usando colchetes [], com seus elementos separados por vírgulas.
+
          // Array ou Vetor
          var nomes = ["André", "Thiago", "Maria", "João"];
 
-// Removendo o último
-nomes.pop();
-console.log(nomes);
+        // Removendo o último
+        nomes.pop();
+        console.log(nomes);
 
-// Adicionando valores
-nomes.push("Carla");
-console.log(nomes);
+        // Adicionando valores
+        nomes.push("Carla");
+        console.log(nomes);
 
-// Ordenando valores
-nomes.sort();
-console.log(nomes);
+        // Ordenando valores
+        nomes.sort();
+        console.log(nomes);
 
- // Criando objetos
- let contato = {
-    nome: 'João',
-    telefone: '1120380302',
-    email: 'joao@joao.com.br'
- };
+        //Os objetos são estruturas que permitem armazenar múltiplos valores em uma única variável. Estes valores são armazenados como pares de chave-valor. Em várias linguagens, a notação com chaves {} é usada para representar objetos, com os campos sendo delineados por dois pontos : e separados por vírgulas.
 
- // Visualizando valores de objetos
- console.log(contato.nome);
- console.log(contato.telefone);
- console.log(contato.email);
+        // Criando objetos
+        let contato = {
+            nome: 'João',
+            telefone: '1120380302',
+            email: 'joao@joao.com.br'
+        };
 
- // Adicionando um campo ao objeto
- contato.endereco = "Rua da Minha Casa, 1";
+        // Visualizando valores de objetos
+        console.log(contato.nome);
+        console.log(contato.telefone);
+        console.log(contato.email);
 
- // Removendo um campo do objeto
- delete contato.telefone;
- 
- console.log(contato);
+        // Adicionando um campo ao objeto
+        contato.endereco = "Rua da Minha Casa, 1";
+
+        // Removendo um campo do objeto
+        delete contato.telefone;
+        
+        console.log(contato);
     </script>
 </body>
 </html>
