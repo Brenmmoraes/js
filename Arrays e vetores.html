@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+        // A sintaxe correta para declarar um vetor em JavaScript é usar colchetes [] para delimitar os elementos do vetor. Os elementos do vetor podem ser de qualquer tipo, incluindo números, strings, objetos e até mesmo outros vetores.
+
+        // Os vetores em JavaScript são sempre indexados a partir do 0, o que é uma convenção comum em muitas linguagens de programação. Isso facilita o acesso aos elementos do vetor, pois o primeiro elemento sempre terá o índice 0.
+
+        //
+
+
+
+
+        const filmes = ["Titanic", "Vingadores", "Matrix"];
+        console.log(filmes);
+        console.log(filmes[1]);
+        
+        // Método forEach
+        const arr = ["uva", "banana", "abacaxi", "pêra"];
+        
+        arr.forEach(function(item, index) {
+            console.log(index, item);
+        });
+        
+        // Metódo map
+        listaCompras = arr.map(function() {
+            return "Comprado!"
+        });
+        console.log(listaCompras);
+        
+        listaCompras2 = arr.map(function(item) {
+            if (item === 'abacaxi') {
+                return "Comprado!";
+            } 
+            return item;
+        });
+        console.log(listaCompras2);</script>
+</body>
+</html>
